@@ -5,6 +5,7 @@ body {
   background-color: rgb(218, 218, 218);
   margin-top: 0;
   margin-left: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -32,6 +33,9 @@ header span {
   color: #04284a;
   font-size: 1.3vw;
 }
+.language a:hover {
+  background-color: whitesmoke;
+}
 .mainNav {
   display: flex;
   flex-direction: row;
@@ -50,34 +54,57 @@ header span {
   background-color: whitesmoke;
   color: black;
 }
-.info {
+.teaser {
   width: 75%;
   margin: 0 auto;
   background-color: #171719;
-  padding-top: 2vh;
-  text-align: center;
+  padding: 4% 0;
 }
-.info h1 {
-  background-color: blue;
+.teaser h1 {
   color: whitesmoke;
+  letter-spacing: 0.14em;
   font-size: 2.5vw;
+  font-weight: 600;
+  margin: 0 0 0 10%;
 }
-.info h2 {
-  display: inline-block;
-  background-color: violet;
-  color: white;
-  width: 20%;
-  text-align: left;
-  margin: 0 1vw 1vw -29vw;
-  font-size: 1.5vw;
+.secondaryNav {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #171719;
+  color: whitesmoke;
+  padding-bottom: 2%;
 }
-.info div {
-  background-color: red;
+.secondaryNav h2 {
+  width: 25%;
+  font-size: 2vw;
+  margin: -3.5% 0 0 10%;
+  font-weight: lighter;
+  line-height: 1;
 }
-.info span {
-  width: 40vw;
+.secondaryNav p {
+  margin: 0;
   position: relative;
-  top: 0vw;
-  margin: -10vw;
-  background-color: violet;
+  top: -0;
+  left: 36%;
+  width: 64%;
+  font-size: 2vw;
+}
+.secondaryNav nav {
+  margin: -5.1% 0 0 36%;
+  width: 64%;
+}
+.secondaryNav nav a {
+  text-decoration: none;
+  color: whitesmoke;
+  border: solid #7a88a3 0.2vh;
+  background: #032747;
+  margin: 0 2.8% 0 0;
+  padding: 0.6% 3%;
+  font-size: 1.8vw;
+}
+.grow {
+  transition: all 0.1s ease-in-out;
+}
+.secondaryNav nav a .grow:hover {
+  transform: scale(1.1);
 }
