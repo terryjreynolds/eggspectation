@@ -5,7 +5,7 @@ body {
   background-color: rgb(218, 218, 218);
   margin-top: 0;
   margin-left: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -52,13 +52,14 @@ header span {
 }
 .mainNav a:hover {
   background-color: whitesmoke;
-  color: black;
+  color: #04284a;
 }
 .teaser {
   width: 75%;
   margin: 0 auto;
   background-color: #171719;
   padding: 4% 0;
+  padding-bottom: 3%;
 }
 .teaser h1 {
   color: whitesmoke;
@@ -68,6 +69,8 @@ header span {
   margin: 0 0 0 10%;
 }
 .secondaryNav {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   width: 75%;
   margin: 0 auto;
   background-color: #171719;
@@ -75,36 +78,40 @@ header span {
   padding-bottom: 2%;
 }
 .secondaryNav h2 {
-  width: 25%;
-  font-size: 2vw;
-  margin: -3.5% 0 0 10%;
-  font-weight: lighter;
-  line-height: 1;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  width: 70%;
+  margin: -25% 0 0 30%;
+
+  line-height: 1.2;
 }
 .secondaryNav p {
-  margin: 0;
+  grid-column-start: 2;
+  grid-column-end: 2;
   position: relative;
-  top: -0;
-  left: 36%;
-  width: 64%;
+  top: -23%;
+  left: 3%;
+  width: 65%;
   font-size: 2vw;
 }
 .secondaryNav nav {
-  margin: -5.1% 0 0 36%;
-  width: 64%;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  margin: -3% 0 0 3%;
 }
 .secondaryNav nav a {
+  display: inline-block;
   text-decoration: none;
   color: whitesmoke;
   border: solid #7a88a3 0.2vh;
   background: #032747;
-  margin: 0 2.8% 0 0;
-  padding: 0.6% 3%;
+  margin: 0 2% 0 0;
+  padding: 0.6% 2.5%;
   font-size: 1.8vw;
 }
 .grow {
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-.secondaryNav nav a .grow:hover {
+.grow:hover {
   transform: scale(1.1);
 }
