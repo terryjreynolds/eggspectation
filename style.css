@@ -7,7 +7,6 @@ body {
   margin-left: 0;
   font-family: "Poppins", sans-serif;
 }
-
 header {
   background-color: #9eb5e1;
   width: 75%;
@@ -82,8 +81,8 @@ header span {
   grid-column-end: 1;
   width: 70%;
   margin: -25% 0 0 30%;
-
-  line-height: 1.2;
+  font-size: 1.6vw;
+  line-height: 1.3;
 }
 .secondaryNav p {
   grid-column-start: 2;
@@ -97,7 +96,7 @@ header span {
 .secondaryNav nav {
   grid-column-start: 2;
   grid-column-end: 2;
-  margin: -3% 0 0 3%;
+  margin: -4% 2% 0 3%;
 }
 .secondaryNav nav a {
   display: inline-block;
@@ -107,11 +106,55 @@ header span {
   background: #032747;
   margin: 0 2% 0 0;
   padding: 0.6% 2.5%;
-  font-size: 1.8vw;
+  font-size: 1.6vw;
 }
 .grow {
   transition: all 0.2s ease-in-out;
 }
 .grow:hover {
   transform: scale(1.1);
+}
+.burgerWrap {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 0;
+}
+.burger {
+  width: 100%;
+}
+.imgRow {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  margin: 0 auto;
+  font-size: 0;
+}
+.imgColumn {
+  flex: 50%;
+}
+.pancakes {
+  width: 100%;
+}
+.eggstack {
+  width: 100%;
+}
+footer {
+  color: whitesmoke;
+  text-align: end;
+  font-size: 1.6vw;
+  background-color: #7a88a3;
+  width: 75%;
+  margin: 0 auto;
+  padding: 1.5% 1.5% 1% 0;
+}
+/*----------MEDIA QUERIES----------*/
+@media only screen and (max-width: 1024px) {
+  body {
+    margin-top: 8%;
+  }
+}
+@media only screen and (max-width: 414px) {
+  body {
+    margin-top: 18%;
+  }
 }
