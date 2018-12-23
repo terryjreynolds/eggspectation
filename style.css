@@ -155,6 +155,16 @@ footer {
 }
 @media only screen and (max-width: 414px) {
   body {
-    margin-top: 18%;
+    margin-top: 5%;
+    margin-right: 0%;
+  }
+  header,
+  .mainNav,
+  .teaser,
+  .secondaryNav,
+  .burgerWrap,
+  .imgRow,
+  footer {
+    width: 100%;
   }
 }
