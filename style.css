@@ -131,17 +131,36 @@ header span {
     opacity: 1;
   }
 }
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .burgerFadeInOnLoad {
   width: 100%;
-  animation: fadeIn 2s;
+  animation: fadeIn 3s;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 .burgerWrap {
   width: 75%;
   margin: 0 auto;
   font-size: 0;
+  position: relative;
 }
 .burgerHidden {
   display: none;
+}
+.burgerTransparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  animation: fadeOut 2s;
 }
 .burgerShow {
   width: 100%;
@@ -149,6 +168,9 @@ header span {
 .burger-small {
   filter: blur(20px);
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .imgRow {
   display: flex;
