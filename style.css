@@ -12,11 +12,11 @@ header {
   width: 75%;
   margin: 0 auto;
   text-align: center;
-  padding: 0.5%;
 }
 header img {
   width: 40%;
-  margin: 3% auto 1% auto;
+
+  margin-top: calc(18px + (20 - 18) * ((100vw - 300px) / (1600 - 300)));
 }
 header span {
   font-size: 1.3vw;
@@ -30,7 +30,7 @@ header span {
 .language a {
   text-decoration: none;
   color: #04284a;
-  font-size: 1.3vw;
+  font-size: calc(4px + (18 - 4) * ((100vw - 300px) / (1600 - 300)));
 }
 .language a:hover {
   background-color: whitesmoke;
@@ -46,7 +46,7 @@ header span {
 }
 .mainNav a {
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: calc(5px + (24 - 5) * ((100vw - 300px) / (1600 - 300)));
   color: whitesmoke;
 }
 .mainNav a:hover {
@@ -74,36 +74,32 @@ header span {
   margin: 0 auto;
   background-color: #171719;
   color: whitesmoke;
+  padding-bottom: 2%;
 }
 .secondaryNav pre {
   margin: 0;
-  margin-left: 5%;
-  font-size: 1.8vw;
   font-family: "Poppins", sans-serif;
   font-size: calc(8px + (24 - 8) * ((100vw - 300px) / (1600 - 300)));
 }
 .secondaryNav p {
   margin: 0;
   padding-left: 2%;
-  font-size: calc(10px + (24 - 10) * ((100vw - 300px) / (1600 - 300)));
-  background-color: brown;
+  font-size: calc(8px + (24 - 8) * ((100vw - 300px) / (1600 - 300)));
 }
 .description {
   grid-column-start: 1;
   grid-column-end: 1;
   width: 100%;
-  background-color: blue;
+  padding-left: calc(0.3px + (40 - 0.3) * ((100vw - 300px) / (1600 - 300)));
 }
 .location {
   grid-column-start: 2;
   grid-column-end: 2;
   width: 100%;
   margin-right: 2%;
-  background-color: red;
   position: relative;
 }
 .secondaryNav nav {
-  background-color: green;
   grid-column-start: 2;
   grid-column-end: 2;
   width: 100%;
@@ -117,7 +113,7 @@ header span {
   color: whitesmoke;
   border: solid #7a88a3 0.2vh;
   background: #032747;
-  margin-right: calc(2px + (28 - 2) * ((100vw - 520px) / (1600 - 500)));
+  margin-right: calc(2px + (28 - 2) * ((100vw - 520px) / (1600 - 520)));
   padding: 0.6% 2.5%;
   font-size: calc(8px + (24 - 8) * ((100vw - 520px) / (1600 - 520)));
 }
@@ -132,7 +128,14 @@ header span {
   margin: 0 auto;
   font-size: 0;
 }
-.burger {
+.burgerHidden {
+  display: none;
+}
+.burgerShow {
+  width: 100%;
+}
+.burger-small {
+  filter: blur(20px);
   width: 100%;
 }
 .imgRow {
@@ -170,14 +173,5 @@ footer {
   body {
     margin-top: 8%;
     margin-right: 0%;
-  }
-  header,
-  .mainNav,
-  .teaser,
-  .secondaryNav,
-  .burgerWrap,
-  .imgRow,
-  footer {
-    width: 95%;
   }
 }
