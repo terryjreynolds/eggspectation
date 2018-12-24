@@ -131,10 +131,6 @@ header span {
     opacity: 1;
   }
 }
-#smallBurger {
-}
-#bigBurger {
-}
 .burgerFadeInOnLoad {
   width: 100%;
   animation: fadeIn 2s;
@@ -143,21 +139,16 @@ header span {
   width: 75%;
   margin: 0 auto;
   font-size: 0;
-  position: relative;
 }
 .burgerHidden {
   display: none;
 }
 .burgerShow {
   width: 100%;
-  position: relative;
 }
 .burger-small {
   filter: blur(20px);
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 .imgRow {
   display: flex;
