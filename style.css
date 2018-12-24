@@ -123,6 +123,18 @@ header span {
 .grow:hover {
   transform: scale(1.1);
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.burgerFadeInOnLoad {
+  width: 100%;
+  animation-name: fadeIn;
+}
 .burgerWrap {
   width: 75%;
   margin: 0 auto;
