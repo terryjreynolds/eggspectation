@@ -63,7 +63,7 @@ header span {
 .teaser h1 {
   color: whitesmoke;
   letter-spacing: 0.14em;
-  font-size: 2.5vw;
+  font-size: calc(8px + (38 - 8) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 600;
   margin: 0 0 0 10%;
 }
@@ -80,29 +80,36 @@ header span {
   margin-left: 5%;
   font-size: 1.8vw;
   font-family: "Poppins", sans-serif;
-  font-size: calc(10px + (24 - 10) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(8px + (24 - 8) * ((100vw - 300px) / (1600 - 300)));
 }
 .secondaryNav p {
   margin: 0;
-  font-size: 2vw;
+  padding-left: 2%;
+  font-size: calc(10px + (24 - 10) * ((100vw - 300px) / (1600 - 300)));
+  background-color: brown;
 }
 .description {
   grid-column-start: 1;
   grid-column-end: 1;
-  padding: 1%;
+  width: 100%;
   background-color: blue;
 }
 .location {
   grid-column-start: 2;
   grid-column-end: 2;
-  padding-left: 2%;
-
+  width: 100%;
+  margin-right: 2%;
   background-color: red;
+  position: relative;
 }
 .secondaryNav nav {
-  margin-top: 5%;
+  background-color: green;
   grid-column-start: 2;
   grid-column-end: 2;
+  width: 100%;
+  padding-left: 2%;
+  position: absolute;
+  bottom: 0;
 }
 .secondaryNav nav a {
   display: inline-block;
@@ -110,9 +117,9 @@ header span {
   color: whitesmoke;
   border: solid #7a88a3 0.2vh;
   background: #032747;
-  margin: 0 2% 0 0;
+  margin-right: calc(2px + (28 - 2) * ((100vw - 520px) / (1600 - 500)));
   padding: 0.6% 2.5%;
-  font-size: 1.6vw;
+  font-size: calc(8px + (24 - 8) * ((100vw - 520px) / (1600 - 520)));
 }
 .grow {
   transition: all 0.2s ease-in-out;
