@@ -178,14 +178,21 @@ header span {
   width: 75%;
   margin: 0 auto;
   font-size: 0;
+  display: relative;
 }
 .imgColumn {
   flex: 50%;
 }
 .pancakes {
+  display: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
 }
 .eggstack {
+  display: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
 }
 footer {
