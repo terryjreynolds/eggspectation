@@ -3,6 +3,9 @@ function showHDImages() {
   let smallBurger = document.getElementById("smallBurger");
 
   let bigBurger = document.getElementById("bigBurger");
-  smallBurger.className = "burgerHidden";
+
   bigBurger.className = "burgerFadeInOnLoad";
+  setTimeout(() => {
+    smallBurger.className = "burgerHidden";
+  }, 2000);
 }
