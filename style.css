@@ -133,7 +133,7 @@ header span {
 }
 .burgerFadeInOnLoad {
   width: 100%;
-  animation-name: fadeIn 2s;
+  animation: fadeIn 2s;
 }
 .burgerWrap {
   width: 75%;
