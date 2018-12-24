@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
+  <script type="text/javascript" src="script.js"></script>
 
   <body>
     <header>
@@ -52,7 +53,8 @@
       
     </section>
     <section class="burgerWrap">
-      <img src="img/burger-hd.jpg" class="burger" alt="burger and fries" />
+      <img src="img/burger-hd-small.jpg" id="smallBurger" class="burger-small"/>
+      <img src="img/burger-hd.jpg" id="bigBurger" class="burgerHidden" onload="showHDImages()" alt="burger and fries" />
     </section>
     <section class="imgRow">
       <div class="imgColumn">
@@ -71,5 +73,6 @@
       </div>
     </section>
     <footer>Eggspectation 2018 &#0169</footer>
+    
   </body>
 </html>
