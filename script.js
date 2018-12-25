@@ -1,10 +1,12 @@
 function showHDImages() {
   console.log("im in");
-  let smallBurger = document.getElementById("smallBurger");
 
   let bigBurger = document.getElementById("bigBurger");
 
-  smallBurger.className = "burgerTransparent";
+  const newLocal = "none";
+  document
+    .getElementById("burgerWrap1")
+    .setAttribute("style", "backgroundImage: none; filter: none;");
 
   bigBurger.className = "burgerFadeInOnLoad";
 }

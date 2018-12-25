@@ -131,46 +131,16 @@ header span {
     opacity: 1;
   }
 }
-@keyframes fadeOut {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .burgerFadeInOnLoad {
   width: 100%;
-  animation: fadeIn 3s;
-  position: relative;
-  top: 0;
-  left: 0;
+  animation: fadeIn 1s;
 }
 .burgerWrap {
   width: 75%;
+  filter: (20px);
   margin: 0 auto;
   font-size: 0;
-  position: relative;
-}
-.burgerHidden {
-  display: none;
-}
-.burgerTransparent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  animation: fadeOut 2s;
-}
-.burgerShow {
-  width: 100%;
-}
-.burger-small {
-  filter: blur(20px);
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  background-image: ("img/burger-hd-small.jpg");
 }
 .imgRow {
   display: flex;
@@ -178,21 +148,14 @@ header span {
   width: 75%;
   margin: 0 auto;
   font-size: 0;
-  display: relative;
 }
 .imgColumn {
   flex: 50%;
 }
 .pancakes {
-  display: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
 }
 .eggstack {
-  display: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
 }
 footer {
