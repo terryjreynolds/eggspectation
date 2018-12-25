@@ -125,20 +125,19 @@ header span {
 }
 @keyframes fadeIn {
   0% {
-    filter: blur(20px);
+    opacity: 0;
   }
   100% {
-    filter: none;
+    opacity: 1;
   }
 }
 
 .burgerFadeInOnLoad {
   width: 100%;
-  animation: fadeIn 1s;
+  animation: fadeIn 0.8s;
 }
 .burgerWrap {
   width: 75%;
-  filter: (20px);
   margin: 0 auto;
   font-size: 0;
 }
