@@ -125,12 +125,13 @@ header span {
 }
 @keyframes fadeIn {
   0% {
-    opacity: 0;
+    filter: blur(20px);
   }
   100% {
-    opacity: 1;
+    filter: none;
   }
 }
+
 .burgerFadeInOnLoad {
   width: 100%;
   animation: fadeIn 1s;
@@ -140,7 +141,13 @@ header span {
   filter: (20px);
   margin: 0 auto;
   font-size: 0;
-  background-image: ("img/burger-hd-small.jpg");
+}
+.burgerHidden {
+  display: none;
+}
+.smallBurger {
+  width: 100%;
+  filter: blur(20px);
 }
 .imgRow {
   display: flex;
