@@ -134,7 +134,7 @@ header span {
 
 .burgerFadeInOnLoad {
   width: 100%;
-  animation: fadeIn 0.8s;
+  animation: fadeIn 1s;
 }
 .burgerWrap {
   width: 75%;
@@ -160,11 +160,11 @@ header span {
 }
 .eggstack {
   width: 100%;
-  filter: blur(20px);
+  filter: blur(15px);
 }
 .pancakes {
   width: 100%;
-  filter: blur(20px);
+  filter: blur(15px);
 }
 footer {
   color: whitesmoke;
