@@ -54,7 +54,7 @@
     </section>
     <section id="burgerWrap1" class="burgerWrap">
       <img src="img/burger-hd-small.jpg" id="smallBurger1" class="smallBurger" alt="burger and fries" />
-      <img src="img/burger-hd.jpg" id="bigBurger1" class="burgerHidden" onload="showHDImages()" alt="burger and fries" />
+      <img src="img/burger-hd.jpg" id="bigBurger1" class="burgerHidden" onload="showHDImages(bigBurger1, smallBurger1)" alt="burger and fries" />
     </section>
     <section class="imgRow">
       <div class="imgColumn">
@@ -63,7 +63,7 @@
           src="img/eggstack-hd.jpg"
           id="eggstack1"
           class="burgerHidden"
-          onload="showHDEggstack()"
+          onload="showHDImages(eggstack1, smallEggstack1)"
           alt="eggs on a plate"
         />
       </div>
@@ -74,7 +74,7 @@
           src="img/pancakes-hd.jpg"
           id="pancakes1"
           class="burgerHidden"
-          onload="showHDPancakes()"
+          onload="showHDImages(pancakes1, smallPancakes1)"
           alt="pancakes on a plate"
         />
       </div>
