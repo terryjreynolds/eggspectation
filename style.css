@@ -146,7 +146,7 @@ header span {
 }
 .smallBurger {
   width: 100%;
-  filter: blur(20px) grayscale(100%);
+  filter: blur(20px);
 }
 .imgRow {
   display: flex;
@@ -160,11 +160,11 @@ header span {
 }
 .eggstack {
   width: 100%;
-  filter: blur(15px) grayscale(100%);
+  filter: blur(15px);
 }
 .pancakes {
   width: 100%;
-  filter: blur(15px) grayscale(100%);
+  filter: blur(15px);
 }
 footer {
   color: whitesmoke;
